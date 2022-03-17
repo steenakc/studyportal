@@ -1,0 +1,29 @@
+{% extends 'registration/registration.html' %}
+
+<!-- register page -->
+{% block register_page %}
+
+
+<div class="container-fluid">
+    <div class="row justify-content-center  align-items-center vh-100">
+        <div class="col-lg-6">
+            <h1>Register</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe, ullam impedit animi, inventore mollitia quia omnis voluptates tenetur explicabo minima laborum iusto! Deserunt voluptas veniam omnis laboriosam quos, suscipit nesciunt nemo. Quis reprehenderit quas laborum sequi consectetur quo corrupti deleniti a unde perspiciatis. Minus placeat eius iure expedita deleniti reiciendis cum eveniet exercitationem fugiat amet. Et architecto iusto non veniam deleniti error dolore voluptates amet eveniet tenetur assumenda voluptas quas minus, repudiandae quaerat nesciunt adipisci debitis aliquid earum fuga. Magnam voluptate dolore minus veniam ratione laudantium cupiditate voluptatem eum molestias, mollitia voluptatibus culpa repellat itaque ipsa, necessitatibus in delectus!
+            </p>
+        </div>
+        <div class="col-lg-4">
+        <div class="card shadow custom-card">
+                <div class="card-body">
+                    <form action="" method="post" class="custom-form">
+                        {% csrf_token %}
+                        {{form.as_p}}
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

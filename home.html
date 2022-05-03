@@ -1,0 +1,48 @@
+<form method="post">
+		<center>
+			<h1>CUSTOMER REGISTRATION</h1>
+		<table class="table" style="max-height: 50px; max-width: 500px;">
+			<tr>
+				<th>First name</th>
+				<td><input type="text" pattern="[a-zA-Z\s]{0,50}" title="enter valid name" required name="firsrname" class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Last name</th>
+				<td><input type="text" pattern="[a-zA-Z\s]{0,50}" title="enter valid name" required name="lastname" class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Address</th>
+				<td><input type="text" required name="address" class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Age</th>
+				<td><input type="text" pattern="[0-9]{10}" title="enter valid phone" required name="age" class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Place</th>
+				<td><input type="text" required name="place" pattern="[a-zA-Z\s]{0,50}" title="enter valid place" class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Phone</th>
+				<td><input type="text" pattern="[0-9]{10}" title="enter valid phone" required name="phone" class="form-control"></td>
+			</tr>
+
+			<tr>
+				<th>Email</th>
+				<td><input type="email" required name="email" class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Username</th>
+				<td><input type="text" name="username" class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Password</th>
+				<td><input type="password"  required name="pword" class="form-control"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" value="register" name="submit" class="btn btn-danger"></td>
+			</tr>
+		</table>
+
+		</center>
+	</form>
